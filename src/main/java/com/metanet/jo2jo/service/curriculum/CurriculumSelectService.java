@@ -42,7 +42,7 @@ public class CurriculumSelectService {
     public List<CurriculumDto> curriculumListFromEmp(CurriculumDto curriculumDto){
         //list가 비어있을때를 고려하기 위해 빈 리스트 생성
         List<CurriculumDto> emptyCurriculumList = Collections.emptyList();
-        int curriculumTotalCount = curriculumRepository.selectCurriculumTotalCount(curriculumDto);
+        int curriculumTotalCount = curriculumRepository.selectCurriculumTotalCountFromEmp(curriculumDto);
         PaginationInfo paginationInfo = new PaginationInfo(curriculumDto);
         paginationInfo.setTotalRecordCount(curriculumTotalCount);
 
