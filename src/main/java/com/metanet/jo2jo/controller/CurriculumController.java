@@ -157,7 +157,7 @@ public class CurriculumController {
 
     private List<String> cosList(CurriculumDto curriculumDto){
         List<String> educosList = new ArrayList<>(){{
-            add(curriculumDto.getEducos1());
+            add(curriculumDto.getEducos1()); //더 나은 방법 고민중
             add(curriculumDto.getEducos2());
             add(curriculumDto.getEducos3());
             add(curriculumDto.getEducos4());
